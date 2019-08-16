@@ -1,0 +1,175 @@
+
+ Question 1
+              Python is an example of an
+ 
+
+a.  Interpreted language
+
+
+b.  Declarative language
+
+
+c.  Operating system language
+
+
+d.   Data science language
+
+
+e.   Low level language
+
+
+answers-  a.  Interpreted language
+
+
+
+Question 2    Data Science is a
+
+a. Branch of statistics
+b.  Branch of computer science
+c.Branch of artificial intelligence
+d.Interdisciplinary, made up of all of the above
+
+answer- d.Interdisciplinary, made up of all of the above
+
+
+Question 3 Data visualization is not a part of data science.
+
+
+a. True
+b.False
+
+answer- b.False
+
+ Question 4
+Which bracketing style does Python use for tuples?
+
+
+{ }
+
+
+( )
+
+
+[ ]
+
+Question 51
+point
+5. Question 5
+In Python, strings are considered Mutable, and can be changed.
+
+
+False
+
+
+True
+
+Question 61
+point
+6. Question 6
+What is the result of the following code: ['a', 'b', 'c'] + [1, 2, 3]
+
+
+['a', 'b', 'c', 1, 2, 3]
+
+
+TypeError: Cannot convert list(int) to list(str)
+
+
+['a1', 'b2', 'c3']
+
+
+[['a', 'b', 'c'], [1, 2, 3]]
+
+Question 71
+point
+7. Question 7
+String slicing is
+
+
+A way to make string mutable in python
+
+
+A way to reduce the size on disk of strings in python
+
+
+A way to make a substring of a string in python
+
+Question 81
+point
+8. Question 8
+When you create a lambda, what type is returned? E.g. type(lambda x: x+1) returns
+
+
+<class 'function'>
+
+
+<class 'type'>
+
+
+<class 'int'>
+
+
+<class 'lambda'>
+
+Question 91
+point
+9. Question 9
+The epoch refers to
+
+
+January 1, year 0
+
+
+January 1, year 1970
+
+
+January 1, year 1980
+
+
+January 1, year 2000
+
+Question 101
+point
+10. Question 10
+This code, [x**2 for x in range(10)] , is an example of a
+
+
+List comprehension
+
+
+Sequence comprehension
+
+
+Tuple comprehension
+
+
+List multiplication
+
+Question 111
+point
+11. Question 11
+Given a 6x6 NumPy array r, which of the following options would slice the shaded elements?
+
+
+
+
+
+
+
+
+
+
+Question 121
+point
+12. Question 12
+Given a 6x6 NumPy array r, which of the following options would slice the shaded elements?
+
+
+
+
+
+
+
+
+
+
