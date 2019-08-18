@@ -1,0 +1,76 @@
+
+ans-1
+
+def answer_one():
+    x = max(df['Gold'])
+    ans = df[df['Gold'] == x].index.tolist()
+    return ans[0]
+
+answer_one()
+
+ans-2
+
+def answer_two():
+    x = max(df['Gold'] - df['Gold.1'])
+    ans = df[(df['Gold'] - df['Gold.1']) == x].index.tolist()
+    return ans[0]
+
+answer_two()
+
+ans-3
+
+def answer_three():
+    df_gold = df[(df['Gold']>0) & (df['Gold.1']>0)]
+    df_max_diff = (abs(df_gold['Gold']-df_gold['Gold.1'])/df_gold['Gold.2'])
+    return df_max_diff.idxmax()
+
+answer_three()
+
+ans-4
+
+def answer_four():
+    Points = 3*df['Gold.2'] + 2*df['Silver.2'] + 1*df['Bronze.2']
+    return Points
+
+answer_four()
+
+ans-5
+
+def answer_five():
+    counties_df = census_df[census_df['SUMLEV'] == 50]
+    x = counties_df.groupby('STNAME').count()['SUMLEV']
+    ans = x.idxmax()
+    return ans
+
+answer_five()
+
+ans-6
+def answer_six():
+    new_df = census_df[census_df['SUMLEV'] == 50]
+    top_counties = new_df.sort_values('CENSUS2010POP', ascending = False).groupby('STNAME').head(3)
+#     return top_counties
+    return top_counties.groupby('STNAME').sum().sort_values('CENSUS2010POP', ascending = False).head(3).index.tolist()
+
+
+answer_six()
+
+ans-7
+
+def answer_seven():
+    counties_df = census_df[census_df['SUMLEV'] == 50]
+    counties_df['pop_change'] = abs(counties_df['POPESTIMATE2015'] - counties_df['POPESTIMATE2014'])+abs(counties_df['POPESTIMATE2014'] - counties_df['POPESTIMATE2013'])+abs(counties_df['POPESTIMATE2013'] - counties_df['POPESTIMATE2012'])+abs(counties_df['POPESTIMATE2012'] - counties_df['POPESTIMATE2011'])+abs(counties_df['POPESTIMATE2011'] - counties_df['POPESTIMATE2010'])
+    a = max(counties_df['pop_change'])
+    ans = counties_df['CTYNAME'][counties_df['pop_change']==a].tolist()
+    return ans[0]
+
+
+answer_seven()
+
+ans-8
+
+def answer_eight():
+    counties_df = census_df[census_df['SUMLEV'] == 50]
+    ans = counties_df[((counties_df['REGION']==1)|(counties_df['REGION']==2))&(counties_df['CTYNAME']=='Washington County')&(counties_df['POPESTIMATE2015']>counties_df['POPESTIMATE2014'])][['STNAME','CTYNAME']]
+    return ans
+
+answer_eight()
